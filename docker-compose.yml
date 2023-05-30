@@ -2,6 +2,7 @@ version: '3'
 
 volumes:
   kittygram_pg_volume:
+  media_volume:
   static_volume:
 
 services:
@@ -16,7 +17,8 @@ services:
     image: altair21817/kittygram_backend
     env_file: .env
     volumes:
-      - static_volume:/backend_static/
+      - media_volume:/kittygram/media
+      - static_volume:/backend_static
   frontend:
     image: altair21817/kittygram_frontend
     env_file: .env
@@ -29,4 +31,5 @@ services:
     ports:
       - 9000:80
     volumes:
-      - static_volume:/static
+      - media_volume:/home/kittygram/media
+      - static_volume:/home/kittygram/static
