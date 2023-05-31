@@ -1,7 +1,7 @@
 version: '3'
 
 volumes:
-  kittygram_pg_volume:
+  pg_volume:
   media_volume:
   static_volume:
 
@@ -10,7 +10,7 @@ services:
     image: postgres:13
     env_file: .env
     volumes: 
-      - kittygram_pg_volume:/var/lib/postgresql/data/
+      - pg_volume:/var/lib/postgresql/data/
   backend:
     depends_on:
       - postgres_db
