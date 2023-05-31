@@ -9,7 +9,7 @@ jobs:
 
   backend_tests:
     name: Run tests for backend
-    runs-on: ubunty:22.04
+    runs-on: ubuntu:22.04
     steps:
       - name: Clone Kittygram to runner
         uses: actions/checkout@v3
