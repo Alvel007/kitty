@@ -113,3 +113,13 @@ mv kittygram_workflow.yml ./.github/workflows/kittygram_workflow.yml
 - автоматически обновятся контейнеры `backend`, `frontend`, `gateway`
 - контейнеры отправятся на DockerHub облако
 - контейнеры скачаются с DockerHub облако на сервер и перезапустятся
+
+___
+
+### LICENCE
+
+MIT
+
+**Free Software, Hell Yeah!**
+
+Deployment instructions by [TheSuncatcher222](https://github.com/TheSuncatcher222)
